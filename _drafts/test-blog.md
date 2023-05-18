@@ -1,8 +1,5 @@
 ---
 layout: post
 title: Test Blog
-date: 2023-04-29 21:36 +0530
 ---
-
-
 this is a test file
