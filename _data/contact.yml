@@ -1,18 +1,21 @@
 #  The contact options.
 
-- type: linkedin
-  icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
-  url:  'https://www.linkedin.com/in/navendu-duari/'                  # Fill with your Linkedin homepage
-
-- type: github
-  icon: "fab fa-github"
-
 - type: twitter
   icon: "fab fa-twitter"
+  url: https://twitter.com/_navendu
 
 - type: email
   icon: "fas fa-envelope"
   noblank: true # open link in current tab
+
+- type: linkedin
+  icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
+  url:  https://www.linkedin.com/in/navendu-duari
+
+- type: github
+  icon: "fab fa-github"
+  url: https://github.com/navenduduari
+
 
 # - type: rss
 #   icon: "fas fa-rss"
