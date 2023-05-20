@@ -5,7 +5,7 @@ date: 2023-05-19 02:24 +0530
 image: /clean_arch_banner.jpg
 img_path: /assets/images
 ---
-# Introduction
+## Introduction
 
 In this blog, we're going to understand Bob Martin's Clean Architecture[^footnote1].
 
@@ -24,25 +24,25 @@ By employing this architecture, we can develop code that is designed to be durab
 _Image source: https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html_
 This is Bob Martin's clean architecture and it's made up of four concentric circles.
 
-# Entities
+## Entities
 
 ![Clean Architecture: Entity](/clean_arch_entity.png){: width="500" height="285" }
 _Image source: https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html_
 In the center, we have a circle labeled entities. Entities are fundamental components of our application that represent the main concepts of our business. In the context of an edtech company, an entity could be a "student," while in an appointment booking application, entities like "calendar" or "event" would be used.
 
-# Use Cases(Services)
+## Use Cases(Services)
 
 ![Clean Architecture: Use case](/clean_arch_service.png){: width="500" height="285" }
 _Image source: https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html_
 Use cases involve interactions between entities. For example, in an edtech company, a use case could be enrolling a student in a course. In the context of appointment booking, a use case might involve creating a recurring appointment every Monday from 9 am to 9 pm.
 
-# Adapters
+## Adapters
 
 ![Clean Architecture: Adapters](/clean_arch_controller.png){: width="500" height="285" }
 _Image source: https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html_
 Adapters serve the purpose of isolating our use cases from the tools we employ, such as frameworks and drivers, to deliver our applications. The final circle represents these frameworks and drivers that are utilized in application development. For instance, in an example application, we can utilize Express as the framework and the MongoDB driver for Node.js as the driver.
 
-# Dependency Flow
+## Dependency Flow
 
 ![Clean Architecture: Dependency Flow](/clean_arch_dependency_flow.png){: width="500" height="285" }
 _Image source: https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html_
@@ -52,7 +52,7 @@ When a change occurs in a framework or driver, it only affects the corresponding
 
 To maintain resilience in the face of change, we position elements that are likely to change frequently on the outer layers, while placing more stable components on the inner layers. This architecture's ability to adapt to change is one of its key strengths.
 
-# Interfaces
+## Interfaces
 
 ![Clean Architecture: Interface](/clean_arch_interface.png){: width="500" height="285" }
 _Image source: https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html_
@@ -65,7 +65,7 @@ The use case input port is satisfied by the controller, while the use case outpu
 
 In JavaScript, the notion of interfaces may not be familiar to those primarily accustomed to JavaScript programming. However, the concept can be achieved by practicing dependency injection rather than direct imports. Fortunately, injecting dependencies is relatively straightforward in JavaScript.
  
-# That's all? - Nope!
+## That's all? - Nope!
 
 The number of circles depicted in the diagram is not fixed. The circles are presented as a schematic representation, and in practice, we may require more than just four circles. The key principle, however, is that the Dependency Rule always applies. The dependencies in the source code always point inwards, regardless of the number of circles.
 
@@ -73,11 +73,11 @@ As we move towards the inner circles, the level of abstraction increases. The ou
 while moving inwards encapsulates higher-level policies. The innermost circle represents the most general and abstract concepts. 
 Therefore, the specific number of circles can vary, but the overall concept remains the same.
 
-# Conclusion
+## Conclusion
 
 The diagram may appear confusing at this stage since we haven't delved into the practical implementation details. 
 In the upcoming blog, I will provide a comprehensive explanation of each layer along with code examples, which will help clarify how the architecture can be effectively implemented in actual code.
 
-# References
+## References
 [^footnote1]: [The Clean Architecture by Robert C. Martin (Uncle Bob)](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
 [^footnote2]: <https://www.techtarget.com/whatis/definition/clean-architecture>
