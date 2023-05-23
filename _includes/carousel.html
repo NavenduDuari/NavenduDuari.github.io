@@ -28,7 +28,7 @@
         <div class="carousel__track">
           <ul>
             {% for item in page.carousels[number].images %}
-        <p class="carousel__slide" data="{{ number }}">
+            <p class="carousel__slide">
               <img class="lazyloaded" width="972" height="589" src="{{ item.image }}" data-source="{{ item.image }}" data-proofer-ignore>
             </p>
             {% endfor %}
@@ -39,14 +39,23 @@
         <!--       <label class="carousel__indicator" for="{{ number }}{{ letters[forloop.index0] }}"></label> -->
         <!--     {% endfor %} -->
         <!-- </div> -->
-        <div class="carousel__caption">
-          <span class="caption">{{ caption }}</span>
-        </div>
+    </div>
+    <div class="carousel__caption">
+      <span class="caption">{{ caption }}</span>
     </div>
 </div>
 
 <style>
-.carousel__holder {width: 100%; position: relative; padding-bottom: {{ include.height }}{{ include.unit }}; margin: 1rem 0 1rem;}
+.carousel__holder {
+  width: 100%;
+  position: relative; 
+  /* padding-bottom: {{ include.height }}{{ include.unit }};  */
+  margin: 1rem 0 1rem;
+  padding-bottom: 75%;
+  @media (max-width: 480px) {
+    padding-bottom: 80%;
+  }
+}
 .carousel {
   height: 100%;
   width: 100%;
@@ -118,6 +127,9 @@
   bottom: 35px;
   width: 100%;
   text-align: center;
+  @media (max-width: 480px) {
+    bottom: 0px;
+  }
 }
 .carousel__indicator {
   height: 15px;
