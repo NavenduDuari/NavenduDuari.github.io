@@ -2,6 +2,7 @@
 layout: post
 title: NPM Package Alias
 date: 2023-05-20 01:36 +0530
+tags: [nodejs, npm]
 image: /assets/images/npm_package_alias_banner.jpg
 ---
 

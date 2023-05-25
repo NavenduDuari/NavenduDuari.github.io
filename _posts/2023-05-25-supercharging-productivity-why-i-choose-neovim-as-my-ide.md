@@ -2,6 +2,7 @@
 layout: post
 title: 'Supercharging Productivity: Why I Choose Neovim as My IDE'
 date: 2023-05-25 20:20 +0530
+tags: [productivity, tools]
 image: /assets/images/neovim_banner.png
 ---
 

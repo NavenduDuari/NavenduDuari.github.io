@@ -2,6 +2,7 @@
 layout: post
 title: Understanding the Clean Architecture
 date: 2023-05-19 02:24 +0530
+tags: [software architecture]
 image: /clean_arch_banner.jpg
 img_path: /assets/images
 ---

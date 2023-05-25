@@ -2,6 +2,7 @@
 layout: post
 title: 'Boosting Developer Productivity: Unleashing the Power of tmux'
 date: 2023-05-22 19:46 +0530
+tags: [productivity, tools]
 img_path: /assets/images/tmux
 carousels:
   - images: 
