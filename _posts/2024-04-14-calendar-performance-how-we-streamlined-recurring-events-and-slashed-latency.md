@@ -2,6 +2,8 @@
 layout: post
 title: 'Calendar Performance: How We Streamlined Recurring Events and Slashed Latency'
 date: 2024-04-14 19:23 +0530
+tags: [Optimization]
+image: /calendar-performance-banner.jpg
 img_path: /assets/images/calendar-performance
 carousels:
   - images:
@@ -23,7 +25,7 @@ for our calendar product's most crucial API: the free-slot API.
 With median latencies hovering around 14 seconds and max latencies spiking up to a staggering 250 seconds, 
 it was evident that significant improvements on the free-slot API were imperative. Refer to the video below to understand the issue we're talking about.
 
-<iframe width="650" height="365.63" src="https://www.loom.com/embed/35160a1e12004a5b826f1daf80a53775" frameborder="0" allowfullscreen> </iframe>
+<iframe width="700" height="393" src="https://www.loom.com/embed/35160a1e12004a5b826f1daf80a53775" frameborder="0" allowfullscreen> </iframe>
 
 ## Initiatives
 
@@ -55,10 +57,10 @@ the disproportionate impact of recurring events on latency.
 - **Assumption Verification:** With a keen focus on performance optimization, we probed further to validate our assumption that latency correlated 
 with the volume of records fetched.
 
-![Max Latencies](/max-latencies.png){: width="500" height="285" }
+![Max Latencies](/max-latencies.png){: width="700" height="393" }
 _Max Latencies in seconds_
 
-![Latencies by event type](/latencies-by-event-type.png){: width="500" height="285" }
+![Latencies by event type](/latencies-by-event-type.png){: width="700" height="393" }
 _Latencies by Event Type_
 
 ## The Eureka Moment and The Solution
@@ -78,7 +80,7 @@ to flag ended calendar events, mitigating the retrieval of obsolete data.
 - **2%** reduction in Median Latencies, signifying enhanced performance across the majority of query instances. Up to 50% improvement for the most affected businesses.
 - **23%** reduction in Average Latencies, showcasing overall improvement in the query response times.
 
-![Recurring Event Query Optimisation](/data-table.png){: width="650" height="385" }
+![Recurring Event Query Optimisation](/data-table.png){: width="700" height="393" }
 _This table shows the improvement metrics_
 
 

@@ -29,7 +29,7 @@
           <ul>
             {% for item in page.carousels[number].images %}
             <p class="carousel__slide">
-              <img class="lazyloaded" width="972" height="589" src="{{ item.image }}" data-source="{{ item.image }}" data-proofer-ignore>
+              <img class="lazyloaded" width="700" height="393" src="{{ item.image }}" data-source="{{ item.image }}" data-proofer-ignore>
             </p>
             {% endfor %}
           </ul>
@@ -47,11 +47,14 @@
 
 <style>
 .carousel__holder {
-  width: 100%;
+  width: 85%;
   position: relative; 
   /* padding-bottom: {{ include.height }}{{ include.unit }};  */
   margin: 1rem 0 1rem;
-  padding-bottom: 75%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  padding-bottom: 60%;
   @media (max-width: 620px) {
     padding-bottom: 80%;
   }
@@ -125,7 +128,7 @@
 }
 .carousel__indicators, .carousel__caption {
   position: absolute;
-  bottom: 35px;
+  bottom: 0px;
   width: 100%;
   text-align: center;
   @media (max-width: 620px) {
@@ -173,6 +176,13 @@
   left: 0;
   right: 0;
   opacity: 1;
+}
+.carousel__slide a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 {% for item in page.carousels[number].images %}
 .carousel__track .carousel__slide:nth-of-type({{ forloop.index }}) {
