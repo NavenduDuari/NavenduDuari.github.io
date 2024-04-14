@@ -25,7 +25,7 @@ for our calendar product's most crucial API: the free-slot API.
 With median latencies hovering around 14 seconds and max latencies spiking up to a staggering 250 seconds, 
 it was evident that significant improvements on the free-slot API were imperative. Refer to the video below to understand the issue we're talking about.
 
-<iframe width="700" height="393" src="https://www.loom.com/embed/35160a1e12004a5b826f1daf80a53775" frameborder="0" allowfullscreen> </iframe>
+{% include iframe.html src="https://www.loom.com/embed/35160a1e12004a5b826f1daf80a53775" %}
 
 ## Initiatives
 
